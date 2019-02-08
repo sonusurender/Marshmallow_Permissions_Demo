@@ -1,0 +1,62 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="fill_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="5dp"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/title"
+        android:textColor="@android:color/black"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/access_location_permission"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:onClick="allowLocationPermission"
+        android:text="@string/location"
+        android:textColor="@android:color/black"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/access_contacts_permission"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="allowContactsPermission"
+        android:text="@string/contacts"
+        android:textColor="@android:color/black"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/access_sms_permission"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="allowSmsPermission"
+        android:text="@string/sms"
+        android:textColor="@android:color/black"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/access_storage_permission"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="allowStoragePermission"
+        android:text="@string/storage"
+        android:textColor="@android:color/black"
+        android:textSize="15sp" />
+
+</LinearLayout>
